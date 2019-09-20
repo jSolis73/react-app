@@ -1,5 +1,6 @@
 import React from 'react'
 import './ActiveQuiz.css'
+import AnswersList from './AnswersList/AnswersList'
 
 const ActiveQuiz = props => (
 	<div className="ActiveQuiz">
@@ -11,13 +12,9 @@ const ActiveQuiz = props => (
 			<small>3 из 15</small>
 		</p>
 
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+		<AnswersList 
+			answers={props.answers}
+		/>
 	</div>
 )
 
